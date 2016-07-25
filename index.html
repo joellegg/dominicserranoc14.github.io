@@ -4,21 +4,26 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
-  <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/node_modules/materialize-css/dist/css/materialize.min.css">
+ <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css"></head>
-<body>
+<body ng-app="Pinterest">
 
+  <div ng-include="'partials/nav-partial.html'">
+    
+  </div>
 
+  <div class="container" ng-view>
+    <h1>how very pinteresting</h1>
 
-
+  </div>
 
 <!-- Third Party Links  -->
 <script src="lib/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="lib/node_modules/angular/angular.min.js"></script>
 <script src="lib/node_modules/angular-route/angular-route.min.js"></script>
 <script src="lib/node_modules/firebase/firebase.js"></script>
+<script src="/lib/node_modules/materialize-css/dist/js/materialize.min.js"></script>
 
 <!-- App Links  -->
 <script src="app/app.js"></script>
@@ -36,7 +41,6 @@
 <script src="app/controllers/NewBoardCtrl.js"></script>
 <script src="app/controllers/NewPinCtrl.js"></script>
 <script src="app/controllers/PinCtrl.js"></script>
-<script src="app/controllers/PinDetailsCtrl.js"></script>
 
 
 <!-- Auth Links  -->
