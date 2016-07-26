@@ -1,9 +1,18 @@
 "use strict";
 
 var app = angular.module("Pinterest", ['ngRoute'])
-.constant('FirebaseURL', "https://pinkey-brain.firebaseio.com/");
+.constant('FirebaseURL', "https://pinkey-brain.firebaseio.com");
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, FBCreds) {
+
+  let authConfig = {
+    apiKey: FBCreds.apiKey,
+    authDomain: FBCreds.authDomain,
+    databaseURL: FBCreds.databaseURL,
+    storageBucket: FBCreds.storageBucket
+  };
+
+  firebase.initializeApp(authConfig);
 
   $routeProvider.
   when('/login', {
@@ -16,13 +25,13 @@ app.config(function($routeProvider) {
   }).
   when('/boards/new', {
     templateUrl: 'partials/new-board.html',
-    controller: 'NewBoard'
+    controller: 'NewBoardCtrl'
   }).
-  when('/boards/pins', {
+  when('/boards/:boardId', {
     templateUrl: 'partials/pin-view.html',
     controller: 'PinCtrl'
   }).
-  when('/boards/pins/new', {
+  when('/boards/pins/new/:boardId', {
     templateUrl: 'partials/new-pin.html',
     controller: 'NewPinCtrl'
   }).
