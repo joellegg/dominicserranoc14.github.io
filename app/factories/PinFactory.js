@@ -7,13 +7,12 @@ app.factory("PinStorage", function(FirebaseURL, $q, $http) {
     return $q(function(resolve, reject) {
       $http.get(`${FirebaseURL}/pin.json`)
       .success(function(pinObject){
-        console.log("pinObject", pinObject);
         if (pinObject) {
           Object.keys(pinObject).forEach(function(key) {
             pinObject[key].id = key;
             pins.push(pinObject[key]);
           });
-        };
+        }
         resolve(pins);
         })
         .error(function(error){
@@ -22,8 +21,38 @@ app.factory("PinStorage", function(FirebaseURL, $q, $http) {
     });
   };
 
+  let postNewPin = function (newPin, boardId) {
+    newPin.fb_b_key = boardId;
+    return $q(function(resolve, reject) {
+      $http.post(
+        `${FirebaseURL}/pin.json`,
+        JSON.stringify(newPin)
+      )
+      .success(function(ObjFromFirebase) {
+        resolve(ObjFromFirebase);
+      })
+      .error(function(error) {
+        reject(error);
+      });
+    });
+  };
+
+  let deletePin = function (id) {
+    return $q(function (resolve, reject) {
+      $http.delete(
+        `${FirebaseURL}/pin/${id}.json`
+        )
+      .success(function() {
+        resolve();
+      })
+      .error(function(error) {
+        reject(error);
+      });
+    });
+  };
+
   return {
-    getPins
+    getPins, postNewPin, deletePin
   };
 
 });

@@ -1,7 +1,7 @@
 <section>
     <h2>Your Pins</h2>
     <div class="row" >
-      <div class="card col s12 m6" ng-repeat="pin in pins">
+      <div class="card col s12 m6" ng-repeat="pin in pins | filter: searchText.search">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="{{pin.url}}">
       </div>
@@ -9,7 +9,7 @@
         <span class="card-title activator grey-text text-darken-4">{{pin.title}}
           <i class="material-icons right">more_vert</i>
         </span>
-          <i class="material-icons right">delete</i>
+          <i class="material-icons right" ng-click="delete(pin.id)">delete</i>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">{{pin.title}}<i class="material-icons right">close</i></span>
@@ -17,4 +17,5 @@
       </div>
     </div>
    </div>
+    <a class="btn-floating btn-large waves-effect waves-light red" href="#/boards/pins/new/{{newPinId}}"><i class="material-icons">add</i></a>
   </section>

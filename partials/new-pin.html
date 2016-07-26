@@ -1,18 +1,18 @@
 <section>
     <h2>New Pin: </h2>
     <div class="input-field">
-      <input type="text" name="">
+      <input type="text" name="" ng-model="newPin.url">
       <label for="">Image URL</label>
     </div>
     <div class="input-field">
-      <input type="text" name="">
+      <input type="text" name="" ng-model="newPin.title">
       <label for="">Pin Name</label>
     </div>
     <div class="input-field">
-      <input type="text" name="">
+      <input type="text" name="" ng-model="newPin.desc">
       <label for="">Description</label>
     </div>
-    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <button class="btn waves-effect waves-light" type="submit" name="action" ng-click="addNewPin()">Submit
     <i class="material-icons right">send</i>
   </button>
 </section>
