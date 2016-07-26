@@ -1,7 +1,7 @@
 "use strict";
 
 var app = angular.module("Pinterest", ['ngRoute'])
-.constant('FirebaseURL', "https://pinkey-brain.firebaseio.com/");
+.constant('FirebaseURL', "https://pinkey-brain.firebaseio.com");
 
 app.config(function($routeProvider) {
 
@@ -16,9 +16,9 @@ app.config(function($routeProvider) {
   }).
   when('/boards/new', {
     templateUrl: 'partials/new-board.html',
-    controller: 'NewBoard'
+    controller: 'NewBoardCtrl'
   }).
-  when('/boards/pins', {
+  when('/boards/:boardId', {
     templateUrl: 'partials/pin-view.html',
     controller: 'PinCtrl'
   }).
