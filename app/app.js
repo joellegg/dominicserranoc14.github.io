@@ -6,10 +6,10 @@ app.config(function($routeProvider) {
 
 
   $routeProvider.
-  when('/home', {
-    templateUrl: '',
-    controller: ''
+  when('/about', {
+    templateUrl: '/partials/about.html',
+    controller: 'AboutCtrl'
   }).
-  otherwise('/home');
+  otherwise('/about');
 
 });
