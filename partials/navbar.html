@@ -5,13 +5,12 @@
 
   <div id="popup" class="animate-nav" ng-hide="navOpen">
     <div class="nav-container">
-      <p class="list-item home-link" href="#"><span>Home</span></p>
-      <p class="list-item about-link" href="#"><span>About</span></p>
-      <p class="list-item contact-link" href="#"><span>Contact</span></p>
+      <p class="list-item about-link"><span><a href="#/about" ng-click="toggleNavbar()">About</a></span></p>
+      <p class="list-item contact-link"><span><a href="#/contact" ng-click="toggleNavbar()">Contact</a></span></p>
     </div>
     <hr>
     <div class="nav-container">
-      <p class="list-item project-link" href="#"><span>Projects</span></p>
+      <p class="list-item project-link"><span><a href="#/projects" ng-click="toggleNavbar()">Projects</a></span></p>
       <!-- <p class="list-item" href="#"><span>Some Project Name</span></p>
       <p class="list-item" href="#"><span>Some Project Name</span></p>
       <p class="list-item" href="#"><span>Some Project Name</span></p> -->
