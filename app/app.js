@@ -1,9 +1,8 @@
 "use strict";
 
-var app = angular.module("Pinterest", ['ngRoute'])
-.constant('FirebaseURL', "https://pinkey-brain.firebaseio.com");
+var app = angular.module("APP", ['ngRoute', 'ngAnimate']);
 
-app.config(function($routeProvider, FBCreds) {
+app.config(function($routeProvider) {
 
 
   $routeProvider.

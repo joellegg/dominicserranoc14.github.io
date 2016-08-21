@@ -1,0 +1,21 @@
+<nav id="navbar" ng-controller="NavBarCtrl">
+
+  <img ng-show="navOpen" ng-click="toggleNavbar()" class="nav-icon" src="img/list-large.png" />
+  <img ng-hide="navOpen" ng-click="toggleNavbar()" class="nav-icon" src="img/close-large.png" />
+
+  <div id="popup" class="animate-nav" ng-hide="navOpen">
+    <div class="nav-container">
+      <p class="list-item home-link" href="#"><span>Home</span></p>
+      <p class="list-item about-link" href="#"><span>About</span></p>
+      <p class="list-item contact-link" href="#"><span>Contact</span></p>
+    </div>
+    <hr>
+    <div class="nav-container">
+      <p class="list-item project-link" href="#"><span>Projects</span></p>
+      <p class="list-item" href="#"><span>Some Project Name</span></p>
+      <p class="list-item" href="#"><span>Some Project Name</span></p>
+      <p class="list-item" href="#"><span>Some Project Name</span></p>
+    </div>
+  </div>
+
+</nav>

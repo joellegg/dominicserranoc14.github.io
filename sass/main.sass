@@ -1,3 +1,62 @@
 //Sass is compiling, 8/20/16 11:15 am
+$trans-blue: #5b88f6
+$light-grey: #d1d1d1
+
+
+#navbar
+  position: relative
+
+
+//////////////////////////////////////////
+//Styling for the popup navbar
+//Classes for any flex parent element
+.nav-container
+  display: flex
+  flex-direction: column
+  align-items: stretch
+
+  .list-item
+    flex-grow: 1
+    text-align: center
+    font-size: 30px
+    font-family: 'Baloo Paaji', cursive
+
+  .list-item span:hover
+    color: $trans-blue
+    cursor: pointer
+
+  .project-link
+    color: red
+
+  .home-link
+    color: green
+
+  .about-link
+    color: orange
+
+  .contact-link
+    color: purple
+
+#popup
+  z-index: 100
+  position: fixed
+  height: 100%
+  width: 80%
+  left: 0
+  right: 0
+  overflow: scroll
+  background: $light-grey
+  margin: auto
+
+//////////////////////////////////////////
+//ng-animate classes for popout navbar
+.animate-nav
+  transition: all linear 0.8s
+
+.animate-nav.ng-hide
+  opacity: 0
+
+//////////////////////////////////////////
+
 h1
   text-align: center
