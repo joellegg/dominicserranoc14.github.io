@@ -1,20 +1,15 @@
-<nav id="navbar" ng-controller="NavBarCtrl">
+<nav id="navbar" ng-mouseenter="navOpen=false" ng-mouseleave="navOpen=true" ng-controller="NavBarCtrl">
 
-  <img ng-show="navOpen" ng-click="toggleNavbar()" class="nav-icon" src="img/list-large.png" />
+  <img ng-mouseenter="navOpen=false"  ng-show="navOpen" ng-click="toggleNavbar()" class="nav-icon" src="img/list-large.png" />
   <img ng-hide="navOpen" ng-click="toggleNavbar()" class="nav-icon" src="img/close-large.png" />
 
-  <div id="popup" class="animate-nav" ng-hide="navOpen">
-    <div class="nav-container">
-      <p class="list-item about-link"><span><a href="#/about" ng-click="toggleNavbar()">About</a></span></p>
-      <p class="list-item contact-link"><span><a href="#/contact" ng-click="toggleNavbar()">Contact</a></span></p>
-    </div>
-    <hr>
-    <div class="nav-container">
-      <p class="list-item project-link"><span><a href="#/projects" ng-click="toggleNavbar()">Projects</a></span></p>
-      <!-- <p class="list-item" href="#"><span>Some Project Name</span></p>
-      <p class="list-item" href="#"><span>Some Project Name</span></p>
-      <p class="list-item" href="#"><span>Some Project Name</span></p> -->
-    </div>
+  <div id="popup" class="animate-nav" ng-mouseenter="navOpen=false" ng-mouseleave="navOpen=true" ng-hide="navOpen">
+    <p class="list-item"><a href="#/about" ng-click="toggleNavbar()">About</a></p>
+    <p class="list-item"><a href="#/contact" ng-click="toggleNavbar()">Contact</a></p>
+    <p class="list-item"><a href="#/projects" ng-click="toggleNavbar()">Projects</a></p>
+    <!-- <p class="list-item" href="#"><span>Some Project Name</span></p>
+    <p class="list-item" href="#"><span>Some Project Name</span></p>
+    <p class="list-item" href="#"><span>Some Project Name</span></p> -->
   </div>
 
 </nav>

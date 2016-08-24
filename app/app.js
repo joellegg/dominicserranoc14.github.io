@@ -6,7 +6,7 @@ app.config(function($routeProvider) {
 
 
   $routeProvider.
-  when('/about', {
+  when('/', {
     templateUrl: 'partials/about.html',
     controller: 'AboutCtrl'
   }).
@@ -18,6 +18,6 @@ app.config(function($routeProvider) {
     templateUrl: 'partials/project-view.html',
     controller: 'ProjectsCtrl'
   }).
-  otherwise('/about');
+  otherwise('/');
 
 });

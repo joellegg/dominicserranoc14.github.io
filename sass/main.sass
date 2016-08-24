@@ -1,6 +1,7 @@
 //Sass is compiling, 8/20/16 11:15 am
 $trans-blue: #5b88f6
 $light-grey: #d1d1d1
+$github-grey: #171515
 
 
 @import 'about-styles'
@@ -9,6 +10,13 @@ $light-grey: #d1d1d1
 
 //////////////////////////////////////////
 // Defualt styles for whole app
+body
+  background-size: cover
+  background-image: url(stone-bg.jpg)
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
 a
   text-decoration: none
   color: inherit
@@ -21,44 +29,33 @@ a
 //Classes for any flex parent element
 #navbar
   position: relative
-
-.nav-container
   display: flex
-  flex-direction: column
-  align-items: stretch
+  flex-direction: row
+  background-image: url(stone-border.jpg)
+
+
+#popup
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  z-index: 100
+  height: 3rem
+  width: 100%
+  top: 0
 
   .list-item
+    margin: 0
     flex-grow: 1
     text-align: center
     font-size: 30px
     font-family: 'Baloo Paaji', cursive
+    color: white
+    text-shadow: 5px 5px black
 
-  .list-item span:hover
+  .list-item a:hover
     color: $trans-blue
     cursor: pointer
 
-  .project-link
-    color: red
-
-  .home-link
-    color: green
-
-  .about-link
-    color: orange
-
-  .contact-link
-    color: purple
-
-#popup
-  z-index: 100
-  position: fixed
-  height: 100%
-  width: 80%
-  left: 0
-  right: 0
-  overflow: scroll
-  background: $light-grey
-  margin: auto
 
 //////////////////////////////////////////
 //ng-animate classes for popout navbar
@@ -67,5 +64,8 @@ a
 
 .animate-nav.ng-hide
   opacity: 0
+
+.hide
+  visibility: hidden
 
 //////////////////////////////////////////
