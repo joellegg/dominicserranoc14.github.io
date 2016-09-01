@@ -1,10 +1,13 @@
+$primary-font: 'Roboto Slab', serif
+
+
 //Begin styling for project-view html
 #project-view
   display: flex
   flex-direction: column
   align-items: center
   margin: 2rem auto
-  font-family: 'Baloo Paaji', cursive
+  font-family: $primary-font
 
   #iframe-console
     height: 100vh
@@ -18,15 +21,33 @@
     height: 100vh
     width: 100vh
 
-  #option-console
+  h1
+    margin: .5rem
+    padding: 1rem
+
+
+  #portfolio-container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
     text-align: center
-    margin: 1rem 5rem
+    width: 100vh
+    margin: 2rem
     background:  linear-gradient(to bottom right, rgba(255,255,255,.6), rgba(169,169,169,.6), rgba(100,100,100,.7), rgba(50,50,50,.7))
     box-shadow: 0 8px 8px 2px grey
     color: white
-    h1,select
+
+    img
+      width: 325px
+      height: 200px
+
+    p
       margin: .5rem
+
+    .project-div
+      margin: 1rem
       padding: 1rem
+      border: solid 1px white
 
 
 //Animation for iframe showing

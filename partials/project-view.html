@@ -1,16 +1,24 @@
 <div id="project-view">
 
-    <div id="option-console">
-      <h1>Select A Project to View</h1>
-      <select ng-model="selected" ng-options="site.name for site in urlList">
-        <option value="">Choose a Project</option>
-      </select>
-      <button ng-click="changeUrl()">Preview Project</button>
-    </div>
-
     <div id="iframe-console" class="animate-iframe" ng-hide="viewIframe">
       <h1>{{selectedTitle}}</h1>
       <iframe id="project-iframe" ng-src="{{url}}"></iframe>
     </div>
+
+    <h1>Portfolio</h1>
+
+    <div id="portfolio-container">
+
+      <div class="project-div">
+        <p>Invimtory</p>
+        <p>Description</p>
+        <img src="img/invim-home.png" alt="Invimtory Home Page Screenshot" />
+      </div>
+
+    </div>
+    <!-- <select ng-model="selected" ng-options="site.name for site in urlList">
+      <option value="">Choose a Project</option>
+    </select>
+    <button ng-click="changeUrl()">Preview Project</button> -->
 
 </div>
