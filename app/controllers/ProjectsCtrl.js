@@ -4,7 +4,6 @@
 app.controller('ProjectsCtrl', function($scope, $sce) {
 
   //Selected option value is store here
-  $scope.selected = "";
   $scope.selectedTitle = "";
   $scope.viewIframe = true;
 
