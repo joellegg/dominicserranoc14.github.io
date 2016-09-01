@@ -5,9 +5,13 @@ $primary-font: 'Roboto Slab', serif
 #project-view
   display: flex
   flex-direction: column
+  width: 100%
   align-items: center
-  margin: 2rem auto
+  margin: 2rem 0
   font-family: $primary-font
+  background:  linear-gradient(to bottom right, rgba(255,255,255,.6), rgba(169,169,169,.6), rgba(100,100,100,.7), rgba(50,50,50,.7))
+  box-shadow: 0 8px 8px 2px grey
+
 
   #iframe-console
     height: 100vh
@@ -24,30 +28,37 @@ $primary-font: 'Roboto Slab', serif
   h1
     margin: .5rem
     padding: 1rem
-
-
-  #portfolio-container
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    text-align: center
-    width: 100vh
-    margin: 2rem
-    background:  linear-gradient(to bottom right, rgba(255,255,255,.6), rgba(169,169,169,.6), rgba(100,100,100,.7), rgba(50,50,50,.7))
-    box-shadow: 0 8px 8px 2px grey
     color: white
 
-    img
-      width: 325px
-      height: 200px
 
-    p
-      margin: .5rem
 
-    .project-div
-      margin: 1rem
-      padding: 1rem
-      border: solid 1px white
+#portfolio-container
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  text-align: center
+  margin: 2rem
+  color: white
+
+  img
+    width: 325px
+    height: 200px
+
+  h3
+    text-shadow: 2px 2px black
+
+  p
+    margin: .5rem
+
+  .project-div
+    margin: 1rem 3rem
+    padding: 1rem
+    border: solid 1px white
+
+  div.project-div:hover
+    cursor: pointer
+    box-shadow: 0 8px 6px 4px black
+
 
 
 //Animation for iframe showing

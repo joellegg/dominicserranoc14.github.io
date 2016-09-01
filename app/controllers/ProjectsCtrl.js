@@ -10,7 +10,12 @@ app.controller('ProjectsCtrl', function($scope, $sce) {
 
   //Prepopulated list of projects to show
   $scope.urlList = [
-    { name: 'Invimtory', url: 'https://front-end-capstone.firebaseapp.com/' }
+    {
+    name: 'Invimtory',
+    url: 'https://front-end-capstone.firebaseapp.com/', desc: 'Sales order and inventory tracking app.',
+    img: "img/invim-home.png",
+    imgAlt: 'Invimtory Home Page Screenshot'
+    }
   ];
 
   //Function that shows the iframe when project is selected
@@ -19,10 +24,10 @@ app.controller('ProjectsCtrl', function($scope, $sce) {
   };
 
   //Set the url for the iframe and show the iframe div
-  $scope.changeUrl = function() {
+  $scope.changeUrl = function(item) {
 
-    $scope.url = $sce.trustAsResourceUrl($scope.selected.url);
-    $scope.selectedTitle = $scope.selected.name;
+    $scope.url = $sce.trustAsResourceUrl(item.url);
+    $scope.selectedTitle = item.name;
 
     $scope.activateIframe();
   };
