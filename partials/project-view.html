@@ -7,14 +7,12 @@
 
   <h1>Portfolio</h1>
 
-  <div id="portfolio-container" ng-repeat="item in urlList">
-
-    <div class="project-div" ng-click="changeUrl(item)">
+  <div id="portfolio-container">
+    <div class="project-div" ng-click="changeUrl(item)" ng-repeat="item in urlList">
       <h3>{{item.name}}</h3>
       <p>{{item.desc}}</p>
       <img ng-src="{{item.img}}" alt="{{item.imgAlt}}" />
     </div>
-
   </div>
 
 </div>

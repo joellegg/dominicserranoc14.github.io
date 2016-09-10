@@ -14,6 +14,24 @@ app.controller('ProjectsCtrl', function($scope, $sce) {
     url: 'https://front-end-capstone.firebaseapp.com/', desc: 'Sales order and inventory tracking app.',
     img: "img/invim-home.png",
     imgAlt: 'Invimtory Home Page Screenshot'
+    },
+    {
+    name: 'Invimtory',
+    url: 'https://front-end-capstone.firebaseapp.com/', desc: 'Sales order and inventory tracking app.',
+    img: "img/invim-home.png",
+    imgAlt: 'Invimtory Home Page Screenshot'
+    },
+    {
+    name: 'Invimtory',
+    url: 'https://front-end-capstone.firebaseapp.com/', desc: 'Sales order and inventory tracking app.',
+    img: "img/invim-home.png",
+    imgAlt: 'Invimtory Home Page Screenshot'
+    },
+    {
+    name: 'Invimtory',
+    url: 'https://front-end-capstone.firebaseapp.com/', desc: 'Sales order and inventory tracking app.',
+    img: "img/invim-home.png",
+    imgAlt: 'Invimtory Home Page Screenshot'
     }
   ];
 

@@ -6,6 +6,7 @@ $trans-blue: #5b88f6
 #project-view
   display: flex
   flex-direction: column
+  position: relative
   width: 100%
   align-items: center
   margin: 2rem 0
@@ -32,12 +33,11 @@ $trans-blue: #5b88f6
     color: white
 
 
-
 #portfolio-container
   display: flex
   flex-direction: row
-  flex-wrap: wrap
-  text-align: center
+  overflow-x: scroll
+  width: 100%
   margin: 2rem
   color: white
 
@@ -52,7 +52,7 @@ $trans-blue: #5b88f6
     margin: .5rem
 
   .project-div
-    margin: 1rem 3rem
+    margin: 1rem 1rem
     padding: 1rem
     border: solid 1px white
 
@@ -63,7 +63,6 @@ $trans-blue: #5b88f6
     p
       color: black
       font-style: italic
-
 
 
 //Animation for iframe showing
