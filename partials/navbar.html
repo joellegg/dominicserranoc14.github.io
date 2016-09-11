@@ -2,12 +2,13 @@
 <img ng-hide="navOpen" ng-click="toggleNavbar()" class="nav-icon" src="img/close-large.png" /> -->
 <nav id="navbar" ng-controller="NavBarCtrl">
 
-
   <div id="popup" class="animate-nav" ng-hide="navOpen">
     <p class="list-item"><a href="#/about">About</a></p>
     <p class="list-item"><a href="#/projects">Portfolio</a></p>
-    <p class="list-item-right"><a class="link" href="https://mail.google.com/mail/?view=cm&fs=1&to=dmsrojo@gmail.com"><img src="img/email-outline.png" /></a></p>
-    <p class="list-item-right"><a class="link" href="https://github.com/DominicSerranoC14"><img src="img/github-circle.png" /></a></p>
+    <div class="list-item-icons">
+      <p class="list-item-right"><a class="link" href="https://mail.google.com/mail/?view=cm&fs=1&to=dmsrojo@gmail.com"><img src="img/email-outline.png" /></a></p>
+      <p class="list-item-right"><a class="link" href="https://github.com/DominicSerranoC14"><img src="img/github-circle.png" /></a></p>
+    </div>
     <!-- <p class="list-item" href="#"><span>Some Project Name</span></p>
     <p class="list-item" href="#"><span>Some Project Name</span></p>
     <p class="list-item" href="#"><span>Some Project Name</span></p> -->

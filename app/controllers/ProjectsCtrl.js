@@ -16,23 +16,26 @@ app.controller('ProjectsCtrl', function($scope, $sce) {
     imgAlt: 'Invimtory Home Page Screenshot'
     },
     {
-    name: 'Invimtory',
-    url: 'https://front-end-capstone.firebaseapp.com/', desc: 'Sales order and inventory tracking app.',
-    img: "img/invim-home.png",
-    imgAlt: 'Invimtory Home Page Screenshot'
+    name: 'Coming Soon!',
+    url: '',
+    desc: '',
+    img: "img/coming-soon.png",
+    imgAlt: 'Project Coming Soon'
     },
     {
-    name: 'Invimtory',
-    url: 'https://front-end-capstone.firebaseapp.com/', desc: 'Sales order and inventory tracking app.',
-    img: "img/invim-home.png",
-    imgAlt: 'Invimtory Home Page Screenshot'
+    name: 'Coming Soon!',
+    url: '',
+    desc: '',
+    img: "img/coming-soon.png",
+    imgAlt: 'Project Coming Soon'
     },
     {
-    name: 'Invimtory',
-    url: 'https://front-end-capstone.firebaseapp.com/', desc: 'Sales order and inventory tracking app.',
-    img: "img/invim-home.png",
-    imgAlt: 'Invimtory Home Page Screenshot'
-    }
+    name: 'Coming Soon!',
+    url: '',
+    desc: '',
+    img: "img/coming-soon.png",
+    imgAlt: 'Project Coming Soon'
+    },
   ];
 
   //Function that shows the iframe when project is selected
@@ -45,6 +48,7 @@ app.controller('ProjectsCtrl', function($scope, $sce) {
 
     $scope.url = $sce.trustAsResourceUrl(item.url);
     $scope.selectedTitle = item.name;
+    $scope.selectedObj = item;
 
     $scope.activateIframe();
   };

@@ -1,11 +1,16 @@
 <div id="project-view">
 
+  <h1>Portfolio</h1>
+
   <div id="iframe-console" class="animate-iframe" ng-hide="viewIframe">
     <h1>{{selectedTitle}}</h1>
-    <iframe id="project-iframe" ng-src="{{url}}"></iframe>
+    <div id="project-view-container">
+      <div id="project-panel">
+        Project Description: {{selectedObj.desc}}
+      </div>
+      <iframe id="project-iframe" ng-src="{{url}}"></iframe>
+    </div>
   </div>
-
-  <h1>Portfolio</h1>
 
   <div id="portfolio-container">
     <div class="project-div" ng-click="changeUrl(item)" ng-repeat="item in urlList">
