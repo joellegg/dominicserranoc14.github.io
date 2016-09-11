@@ -6,9 +6,12 @@
     <h1>{{selectedTitle}}</h1>
     <div id="project-view-container">
       <div id="project-panel">
-        Project Description: {{selectedObj.desc}}
+        <p>Project Description:</p>
+        {{selectedObj.detailDesc}}
+        <a class="link" href="{{selectedObj.githubRepo}}"><p>Click to View the Github Repo</p></a>
+        <a class="link" href="{{selectedObj.hostedUrl}}"><p>Click to View the hosted app</p></a>
       </div>
-      <iframe id="project-iframe" ng-src="{{url}}"></iframe>
+      <iframe id="project-iframe" ng-src="{{url}}" width="700px" height="700px"></iframe>
     </div>
   </div>
 
