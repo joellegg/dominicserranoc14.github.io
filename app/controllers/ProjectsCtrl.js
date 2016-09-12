@@ -22,29 +22,58 @@ app.controller('ProjectsCtrl', function($scope, $sce) {
         { img: 'img/angular.js-logo.png', title: 'Angular JS' },
         { img: 'img/css3-logo.png', title: 'CSS3' },
         { img: 'img/html5-logo.png', title: 'HTML5' },
+        { img: 'img/gulp-logo.png', title: 'Gulp' },
         { img: 'img/sass-logo.png', title: 'Sass' },
         { img: 'img/firebase-logo.png', title: 'Firebase'},
-        { img: 'img/js-logo.png', title: 'Javascript'},
         { img: 'img/jquery-logo.jpeg', title: 'jQuery' }
       ]
     },
 
     {
-    name: 'Coming Soon!',
-    url: '',
-    desc: '',
-    img: "img/coming-soon.png",
-    imgAlt: 'Project Coming Soon'
+    name: "Mix 'n' Match",
+    url: 'https://mix-n-match-89e0e.firebaseapp.com',
+    desc: 'A card matching game made with jQuery.',
+    detailDesc: 'This game is a simple card matching game where the player will be presented with a selected number of cards, then will have to memorize the starting position of the cards in order to correctly choose a matching pair to get a point.\n Once three pairs have been chosen, the player will be able to unlock the next level with more pairs they must match correctly. If the first three levels are passed, the player wins!',
+    githubRepo: 'https://github.com/DominicSerranoC14/Mix-and-Match',
+    hostedUrl: 'https://mix-n-match-89e0e.firebaseapp.com/',
+    projectImg: "img/level-one-match.png",
+    imgAlt: 'Level One Successful Match',
+    tech: [
+      { img: 'img/html5-logo.png', title: 'HTML5' },
+      { img: 'img/css3-logo.png', title: 'CSS3' },
+      { img: 'img/sass-logo.png', title: 'Sass' },
+      { img: 'img/gulp-logo.png', title: 'Gulp' },
+      { img: 'img/firebase-logo.png', title: 'Firebase'},
+      { img: 'img/jquery-logo.jpeg', title: 'jQuery' },
+      { img: 'img/browserify-logo.png', title: 'Browserify'}
+    ]
     },
 
     {
-    name: 'Coming Soon!',
-    url: '',
-    desc: '',
-    img: "img/coming-soon.png",
-    imgAlt: 'Project Coming Soon'
+      name: "Coming Soon!",
+      url: '',
+      desc: 'Project Coming Soon!',
+      detailDesc: '',
+      githubRepo: '',
+      hostedUrl: '',
+      projectImg: "img/coming-soon.png",
+      imgAlt: '',
+      tech: [ { img: '', title: '' } ]
+    },
+
+    {
+      name: "Coming Soon!",
+      url: '',
+      desc: 'Project Comint Soon!',
+      detailDesc: '',
+      githubRepo: '',
+      hostedUrl: '',
+      projectImg: "img/coming-soon.png",
+      imgAlt: '',
+      tech: [ { img: '', title: '' } ]
     }
-  ];
+
+  ];//End of project array
 
   //Function that shows the iframe when project is selected
   $scope.activateIframe = function() {

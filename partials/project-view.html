@@ -9,7 +9,7 @@
         <p>Project Description:</p>
         {{selectedObj.detailDesc}}
         <a class="link" href="{{selectedObj.githubRepo}}"><p>Click to View the Github Repo</p></a>
-        <a class="link" href="{{selectedObj.hostedUrl}}"><p>Click to View the hosted app</p></a>
+        <a class="link" href="{{selectedObj.hostedUrl}}"><p>Click to View the hosted url</p></a>
         <p>Technologies used:</p>
         <div class="panel-icon-list" >
           <img ng-repeat="each in selectedObj.tech" ng-src="{{each.img}}" alt="{{each.title}}" />
