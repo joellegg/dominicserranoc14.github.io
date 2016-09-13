@@ -12,7 +12,7 @@ app.controller('ProjectsCtrl', function($scope, $sce) {
     {
       name: 'Invimtory',
       url: 'https://front-end-capstone.firebaseapp.com/', desc: 'Sales order and inventory tracking app.',
-      detailDesc: 'Invimtory is a sales and inventory tracking system. It is designed for an adminstration level user to be able to create customers and orders associated to specific customers. The admin user will aslo be able to track item inventory levels and sales of item for particular time periods.',
+      detailDesc: 'Invimtory is a sales and inventory tracking system. It is designed for an administration level user to be able to create customers and orders associated to specific customers. The administration user will aslo be able to track item inventory levels and sales of item for particular time periods.',
       githubRepo: 'https://github.com/DominicSerranoC14/Front-End-Capstone-Project',
       hostedUrl: 'https://front-end-capstone.firebaseapp.com/',
       projectImg: "img/invim-home.png",
