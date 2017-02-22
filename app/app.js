@@ -1,14 +1,14 @@
 "use strict";
 
-var app = angular.module("APP", ['ngRoute', 'ngAnimate']);
+var app = angular.module("APP", ['ngRoute']);
 
 app.config(function($routeProvider) {
 
 
   $routeProvider.
   when('/', {
-    templateUrl: 'partials/project-view.html',
-    controller: 'ProjectsCtrl'
+    templateUrl: 'partials/about.html',
+    controller: 'AboutCtrl'
   }).
   when('/about', {
     templateUrl: 'partials/about.html',
