@@ -11,17 +11,21 @@
   bottom: 0;
 }
 
-  h4
-    display: inline
-    margin: 1rem
+#footer-container  h4 {
+  display: inline;
+  margin: 1rem;
+}
 
-  a
-    margin: .5rem
+#footer-container a {
+  margin: .5rem;
+}
 
 
-///////////////////////////////////////
-//Media queries
+/* Media queries */
+@media (max-width: 1000px) {
 
-@media (max-width: 1000px)
-  #footer-container p
-    display: none
+  #footer-container p {
+    display: none;
+  }
+
+}
