@@ -9,9 +9,10 @@
   width: 100%;
   background-color: rgba(0,0,0,.3);
 }
-?
+
 #navbar .list-item {
   margin: .5rem 1rem;
+  padding-bottom: 1rem;
   font-size: 20px;
   color: white;
 }
