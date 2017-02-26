@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  height: 50px;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
@@ -10,7 +10,7 @@
 }
 
 #navbar .list-item {
-  margin: 0 1rem;
+  margin: .5rem 1rem;
   font-size: 20px;
   color: white;
 }
@@ -36,14 +36,14 @@
   }
 
   #navbar {
-    /*display: flex;*/
+    display: flex;
     margin: auto;
     flex-direction: column;
     text-align: center;
   }
 
   #navbar .list-item {
-    margin: 1rem;
+    margin-top: 5px;
   }
 
 }

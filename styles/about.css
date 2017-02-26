@@ -1,0 +1,75 @@
+/*$trans-blue: #5b88f6
+$primary-font: 'Roboto Slab', serif*/
+
+#about-body {
+  box-sizing: border-box;
+  margin: 4rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*background:  linear-gradient(to bottom right, rgba(255,255,255,.6), rgba(169,169,169,.6), rgba(100,100,100,.7), rgba(50,50,50,.7));*/
+  background: rgba(220, 220, 220, 0.5);
+  color: white;
+  font-size: 20px;
+  font-family: white;
+  box-shadow: 0 8px 8px 2px black;
+}
+
+#about-div {
+  display: flex;
+  flex-direction: row;
+  flex: 8;
+  flex-wrap: wrap;
+  order: -1;
+}
+
+#about-div .horizontal {
+  border: solid 1px black;
+  box-shadow: 0 0 10px 2px black;
+  width: 50%;
+}
+
+#about-div .about-description {
+  text-align: left;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+#about-div .about-title-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-pic {
+  display: inline;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  border: solid 2px black;
+  box-shadow: 0 3px 3px 2px black;
+  margin: 1rem;
+}
+
+#about-pic h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  text-shadow: 5px 5px black;
+  text-align: center;
+}
+
+#contact-container {
+  color: white;
+  /*font-style: $primary-font;*/
+}
+
+#contact-container h2 {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px black;
+  margin: 1rem;
+}
