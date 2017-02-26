@@ -5,11 +5,7 @@
 }
 
 body {
-  background-color: black;
-  /*background-size: cover;
-  background-image: url(../img/stone-bg.jpg);*/
   box-sizing: border-box;
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
