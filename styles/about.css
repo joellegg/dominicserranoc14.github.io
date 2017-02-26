@@ -30,7 +30,7 @@ $primary-font: 'Roboto Slab', serif*/
 }
 
 #about-div .about-description {
-  text-align: center;
+  text-align: center  ;
   margin: 1rem auto;
   width: 80%;
 }
