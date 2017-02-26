@@ -3,11 +3,13 @@
 
     {
       "title": "Spy on Fido",
+      "date": "November 2016",
+      "numDate": "11/16",
       "summary": "A remote pet monitoring app for busy pet owners.",
       "desc": "Long description",
-      "githubRepo": null,
+      "githubRepo": "https://github.com/DominicSerranoC14/Backend-Capstone",
       "hostedUrl": null,
-      "projectPics": [ "img/invim-home.png" ],
+      "projectPics": [ "img/screenshots/spf-login.png", "img/screenshots/spf-profile.png" ],
       "techPics": [
         { "img": "img/angular.js-logo.png", "title": "Angular JS"}
       ]
@@ -15,11 +17,13 @@
 
     {
       "title": "Invimtory",
+      "date": "August 2016",
+      "numDate": "08/16",
       "summary": "Sales order and inventory tracking app.",
       "desc": "Invimtory is a sales and inventory tracking system. It is designed for an administration level user to be able to create customers and orders associated to specific customers. The administration user will aslo be able to track item inventory levels and sales of item for particular time periods.",
       "githubRepo": "https://github.com/DominicSerranoC14/Front-End-Capstone-Project",
       "hostedUrl": "https://front-end-capstone.firebaseapp.com/",
-      "projectPics": [ "img/invim-home.png" ],
+      "projectPics": [ "img/screenshots/invim-home.png" ],
       "techPics": [
         { "img": "img/angular-material-logo.png", "title": "Angular Material" },
         { "img": "img/angular.js-logo.png", "title": "Angular JS"},
@@ -28,24 +32,26 @@
         { "img": "img/gulp-logo.png", "title": "Gulp" },
         { "img": "img/sass-logo.png", "title": "Sass" },
         { "img": "img/firebase-logo.png", "title": "Firebase"},
-        { "img": "img/jquery-logo.jpeg", "title": "jQuery" }
+        { "img": "img/jquery-logo.jpg", "title": "jQuery" }
       ]
     },
 
     {
       "title": "Mix 'n' Match",
+      "date": "September 2016",
+      "numDate": "09/16",
       "summary": "A card matching game made with jQuery.",
       "desc": "This game is a simple card matching game where the player will be presented with a selected number of cards, then will have to memorize the starting position of the cards in order to correctly choose a matching pair to get a point.\n Once three pairs have been chosen, the player will be able to unlock the next level with more pairs they must match correctly. If the first three levels are passed, the player wins!",
       "githubRepo": "https://github.com/DominicSerranoC14/Mix-and-Match",
-      "hostedUrl": "https://mix-n-match-89e0e.firebaseapp.com/",
-      "projectPics": ["img/level-one-match.png"],
+      "hostedUrl": null,
+      "projectPics": ["img/screenshots/level-one-match.png"],
       "techPics": [
         { "img": "img/html5-logo.png", "title": "HTML5" },
         { "img": "img/css3-logo.png", "title": "CSS3" },
         { "img": "img/sass-logo.png", "title": "Sass" },
         { "img": "img/gulp-logo.png", "title": "Gulp" },
         { "img": "img/firebase-logo.png", "title": "Firebase"},
-        { "img": "img/jquery-logo.jpeg", "title": "jQuery" },
+        { "img": "img/jquery-logo.jpg", "title": "jQuery" },
         { "img": "img/browserify-logo.png", "title": "Browserify"}
       ]
     }

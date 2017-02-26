@@ -28,11 +28,17 @@
 
 .project-info h1 {
   color: black;
+  margin-bottom: 0;
+}
+
+.project-date {
+  margin-top: 0;
+  font: 12px;
 }
 
 .panel-icon-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -52,10 +58,14 @@
 }
 
 .project-pic {
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 85%;
   border: .25rem solid black;
   border-radius: 10px 5px;
+}
+
+.project-summary {
+  margin: 2rem;
 }
 
 .link-div {
