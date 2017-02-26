@@ -31,14 +31,21 @@ const displayProjects = (list) => {
     html += `
     <div class="project-div">
       <div class="project-info">
-        <h1>${each.title}</h1>
+      <h1>${each.title}</h1>
+
+        <div class="link-div">
+          <a target="_blank" class="link" href="${each.githubRepo}">
+            Github Repo
+            <img src="img/github-circle-black.png" />
+          </a>
+
+          <a target="_blank" class="link" href="${each.hostedUrl}">
+            Hosted Project
+            <img src="img/web-black.png" />
+          </a>
+        </div>
+
         <p>Project summary: ${each.summary}</p>
-
-        <a class="link" href="${each.githubRepo}">
-        Click to View the Github Repo</a>
-
-        <a class="link" href="${each.hostedUrl}">
-        Click to View the hosted url</a>
 
         <p>Technologies used:<p>
         <div class="panel-icon-list">
