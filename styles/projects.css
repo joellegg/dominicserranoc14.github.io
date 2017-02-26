@@ -2,4 +2,42 @@
   margin: 4rem;
   text-align: center;
   color: white;
+  background: rgba(220, 220, 220, 0.5);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 4rem 0;
+  font-family: 'Roboto Slab', serif;
+  box-shadow: 0 8px 8px 2px black;
+  /*position: relative;*/
+  /*background:  linear-gradient(to bottom right, rgba(255,255,255,.6), rgba(169,169,169,.6), rgba(100,100,100,.7), rgba(50,50,50,.7))*/
+}
+
+.panel-icon-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.panel-icon-list img {
+  margin: .5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5% 15%;
+}
+
+.project-pic {
+  width: 50%;
+  height: 50%;
+}
+
+.project-div .link:hover {
+  color: #5b88f6;
+}
+
+/* Media queries */
+@media (max-width: 1000px) {
+
 }

@@ -12,7 +12,7 @@ $primary-font: 'Roboto Slab', serif*/
   background: rgba(220, 220, 220, 0.5);
   color: white;
   font-size: 20px;
-  font-family: white;
+  font-family: 'Roboto Slab', serif;
   box-shadow: 0 8px 8px 2px black;
 }
 
@@ -64,7 +64,7 @@ $primary-font: 'Roboto Slab', serif*/
 
 #contact-container {
   color: white;
-  /*font-style: $primary-font;*/
+  font-style: 'Roboto Slab', serif;
 }
 
 #contact-container h2 {

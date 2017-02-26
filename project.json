@@ -7,7 +7,7 @@
       "desc": "Long description",
       "githubRepo": null,
       "hostedUrl": null,
-      "projectPics": [],
+      "projectPics": [ "#" ],
       "techPics": [
         { "img": "img/angular.js-logo.png", "title": "Angular JS"}
       ]
@@ -19,7 +19,7 @@
       "desc": "Invimtory is a sales and inventory tracking system. It is designed for an administration level user to be able to create customers and orders associated to specific customers. The administration user will aslo be able to track item inventory levels and sales of item for particular time periods.",
       "githubRepo": "https://github.com/DominicSerranoC14/Front-End-Capstone-Project",
       "hostedUrl": "https://front-end-capstone.firebaseapp.com/",
-      "projectPics": ["img/invim-home.png"],
+      "projectPics": [ "img/invim-home.png" ],
       "techPics": [
         { "img": "img/angular-material-logo.png", "title": "Angular Material" },
         { "img": "img/angular.js-logo.png", "title": "Angular JS"},

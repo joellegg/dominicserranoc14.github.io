@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  font-family: 'Roboto Slab', serif;
   align-items: center;
   position: fixed;
   top: 0;
@@ -17,7 +18,7 @@
 
 #navbar .list-item a:hover {
   /* trans blue here */
-  color: blue;
+  color: #5b88f6;
   cursor: pointer;
   text-shadow: 5px 5px black;
 }

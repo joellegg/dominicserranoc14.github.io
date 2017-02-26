@@ -29,7 +29,7 @@ const displayProjects = (list) => {
           <div class="panel-icon-list" >
             <img src="${each.techPics[0].img}" />
           </div>
-          <img class="project-mainimage-view" src="${each.projectPics[0]}" >
+          <img class="project-pic" src="${each.projectPics[0]}" >
       </div>
     `;
 
