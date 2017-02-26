@@ -7,7 +7,7 @@
       "desc": "Long description",
       "githubRepo": null,
       "hostedUrl": null,
-      "projectPics": [ "#" ],
+      "projectPics": [ "img/invim-home.png" ],
       "techPics": [
         { "img": "img/angular.js-logo.png", "title": "Angular JS"}
       ]
