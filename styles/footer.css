@@ -22,10 +22,19 @@
 
 
 /* Media queries */
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
 
   #footer-container p {
     display: none;
+  }
+
+  #footer-container h4 {
+    display: none;
+  }
+
+  #footer-container {
+    display: flex;
+    flex-direction: row;
   }
 
 }

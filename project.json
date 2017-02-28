@@ -2,7 +2,7 @@
   "list": [
 
     {
-      "title": "Spy on Fido",
+      "title": "SPY ON FIDO",
       "date": "November 2016",
       "numDate": "11/16",
       "summary": "A remote pet monitoring app for busy pet owners.",
@@ -11,12 +11,14 @@
       "hostedUrl": null,
       "projectPics": [ "img/screenshots/spf-login.png", "img/screenshots/spf-profile.png" ],
       "techPics": [
-        { "img": "img/angular.js-logo.png", "title": "Angular JS"}
+        { "img": "img/angular.js-logo.png", "title": "Angular JS" },
+        { "img": "img/css3-logo.png", "title": "CSS3" },
+        { "img": "img/html5-logo.png", "title": "HTML5" }
       ]
     },
 
     {
-      "title": "Invimtory",
+      "title": "INVIMTORY",
       "date": "August 2016",
       "numDate": "08/16",
       "summary": "Sales order and inventory tracking app.",
@@ -37,7 +39,7 @@
     },
 
     {
-      "title": "Mix 'n' Match",
+      "title": "MIX 'N' MATCH",
       "date": "September 2016",
       "numDate": "09/16",
       "summary": "A card matching game made with jQuery.",
