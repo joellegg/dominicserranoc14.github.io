@@ -27,8 +27,6 @@ $primary-font: 'Roboto Slab', serif*/
 }
 
 #about-div .horizontal {
-  border: solid 1px black;
-  box-shadow: 0 0 10px 2px black;
   width: 50%;
 }
 
