@@ -84,6 +84,7 @@ $primary-font: 'Roboto Slab', serif*/
 }
 
 /* Media queries */
+/* Desktops and larger screens */
 @media (max-width: 800px) {
 
   #about-div {
@@ -91,7 +92,7 @@ $primary-font: 'Roboto Slab', serif*/
   }
 
   #about-div .about-description {
-    width: 80%;
+    width: 90%;
   }
 
   #about-pic {
@@ -100,6 +101,27 @@ $primary-font: 'Roboto Slab', serif*/
 
   #about-div .about-title-div h1 {
     font-size: 60px;
+  }
+
+}
+
+/* Mobile devices */
+@media (max-width: 450px) {
+
+  #about-div {
+    margin: 2.5rem 0;
+  }
+
+  #about-div .about-description {
+    width: 90%;
+  }
+
+  #about-pic {
+    display: none;
+  }
+
+  #about-div .about-title-div h1 {
+    font-size: 50px;
   }
 
 }

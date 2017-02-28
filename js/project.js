@@ -55,7 +55,7 @@ const displayProjects = (list) => {
         <p class="project-summary">Project summary: ${each.summary}</p>
 
         <div class="panel-icon-list">
-          <label>Technologies used:<label>
+          <p>Technologies used:</p>
           <p>${displayTechPics(each.techPics)}</p>
         </div>
       </div>

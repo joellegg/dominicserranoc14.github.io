@@ -22,6 +22,7 @@
 
 
 /* Media queries */
+/* Desktops and larger screens */
 @media (max-width: 800px) {
 
   #footer-container {
@@ -38,8 +39,26 @@
   }
 
   #footer-container img {
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+}
+
+/* Mobile devices */
+@media (max-width: 450px) {
+
+  #footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #footer-container p {
+    display: none;
+  }
+
+  #footer-container h4 {
+    display: none;
   }
 
 }
