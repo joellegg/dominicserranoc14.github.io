@@ -6,8 +6,9 @@
   width: 100%;
   margin: 4rem 0;
   color: black;
-  background: white;
   font-family: 'Roboto Slab', serif;
+  background: white;
+  font-size: 20px;
   box-shadow: 0 8px 8px 2px black;
 }
 
@@ -89,7 +90,7 @@
 }
 
 /* Media queries */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
   #project-view {
     margin: 4rem 0;
