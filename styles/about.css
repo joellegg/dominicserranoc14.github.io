@@ -14,6 +14,10 @@ $primary-font: 'Roboto Slab', serif*/
   font-family: 'Roboto Slab', serif;
 }
 
+#about-body .down-arrow {
+  margin: auto;
+}
+
 #about-div {
   display: flex;
   flex-direction: row;
@@ -30,8 +34,8 @@ $primary-font: 'Roboto Slab', serif*/
 
 #about-div .about-description {
   text-align: center  ;
-  margin: 1rem auto;
-  width: 80%;
+  margin: 2rem auto;
+  width: 50%;
 }
 
 #about-div .about-title-div {
@@ -44,11 +48,10 @@ $primary-font: 'Roboto Slab', serif*/
 
 #about-pic {
   display: inline;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 50%;
-  border: solid 2px black;
-  box-shadow: 0 3px 3px 2px black;
+  border: solid 1px black;
   margin: 1rem;
 }
 
@@ -58,6 +61,14 @@ $primary-font: 'Roboto Slab', serif*/
   font-size: 50px;
   text-shadow: 5px 5px black;
   text-align: center;
+}
+
+.about-link {
+  color: #5b88f6;
+}
+
+.about-link:hover {
+  text-decoration: underline;
 }
 
 #contact-container {
