@@ -93,7 +93,7 @@
 @media (max-width: 1000px) {
 
   #project-view {
-    margin: 4rem 0;
+    margin-top: 6rem;
   }
 
   .project-div {
@@ -101,26 +101,49 @@
     flex-direction: column;
     align-items: center;
     font-size: 25px;
-    margin: 4rem 0;
-    padding-top: 2rem;
   }
 
 }
 
 @media (max-width: 600px) {
 
+  #project-view {
+    margin-top: 7rem;
+  }
+
   .project-div {
-    font-size: 25px;
-    margin: 3rem 0;
+    margin-top: 3rem;
+    font-size: 20px;
   }
 
   .project-pic {
     display: none;
   }
 
+  .link-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .project-div h1 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+
+  .project-div .link {
+    width: 50%;
+    margin: .5rem auto;
+  }
+
   .panel-icon-list img {
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .panel-icon-list p {
+    margin: auto;
+    width: 80%;
   }
 
 }

@@ -22,7 +22,13 @@
 
 
 /* Media queries */
+/* Desktops and larger screens */
 @media (max-width: 800px) {
+
+  #footer-container {
+    display: flex;
+    flex-direction: row;
+  }
 
   #footer-container p {
     display: none;
@@ -32,9 +38,27 @@
     display: none;
   }
 
+  #footer-container img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+}
+
+/* Mobile devices */
+@media (max-width: 450px) {
+
   #footer-container {
     display: flex;
     flex-direction: row;
+  }
+
+  #footer-container p {
+    display: none;
+  }
+
+  #footer-container h4 {
+    display: none;
   }
 
 }
