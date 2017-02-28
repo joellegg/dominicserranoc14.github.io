@@ -15,7 +15,7 @@ $primary-font: 'Roboto Slab', serif*/
 }
 
 #about-body .down-arrow {
-  margin: auto;
+  margin: 0 auto;
 }
 
 #about-div {
@@ -33,7 +33,7 @@ $primary-font: 'Roboto Slab', serif*/
 }
 
 #about-div .about-description {
-  text-align: center  ;
+  text-align: center;
   margin: 2rem auto;
   width: 50%;
 }
@@ -81,4 +81,21 @@ $primary-font: 'Roboto Slab', serif*/
   font-size: 30px;
   text-shadow: 2px 2px black;
   margin: 1rem;
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+
+  #about-div {
+    margin: 2rem 0;
+  }
+
+  #about-div .about-description {
+    width: 80%;
+  }
+
+  #about-pic {
+    display: none;
+  }
+
 }

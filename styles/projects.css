@@ -86,7 +86,7 @@
 }
 
 /* Media queries */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
   #project-view {
     margin: 4rem 0;
