@@ -77,8 +77,11 @@
   color: #5b88f6;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 35%;
+  justify-content: space-around;
+}
+
+.project-div .link img {
+  padding-right: 1rem;
 }
 
 .project-div .link:hover {

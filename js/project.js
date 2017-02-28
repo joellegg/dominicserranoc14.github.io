@@ -24,8 +24,8 @@ const determineHostedURLStatus = (url) => {
   if (url) {
     return `
     <a target="_blank" class="link" href="${url}">
-      Hosted Project
       <img src="img/web-black.png" />
+      Hosted Project
     </a>`;
   } else {
     return '';
@@ -45,8 +45,8 @@ const displayProjects = (list) => {
 
         <div class="link-div">
           <a target="_blank" class="link" href="${each.githubRepo}">
-            Github Repo
             <img src="img/github-circle-black.png" />
+            Github Repo
           </a>
 
           ${determineHostedURLStatus(each.hostedUrl)}
