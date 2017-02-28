@@ -24,6 +24,11 @@
 /* Media queries */
 @media (max-width: 800px) {
 
+  #footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+
   #footer-container p {
     display: none;
   }
@@ -32,9 +37,9 @@
     display: none;
   }
 
-  #footer-container {
-    display: flex;
-    flex-direction: row;
+  #footer-container img {
+    width: 5rem;
+    height: 5rem;
   }
 
 }

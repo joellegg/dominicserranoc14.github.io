@@ -31,7 +31,7 @@
 
 /* Media queries */
 @media (max-width: 800px) {
-  
+
   #navbar .title {
     display: none;
   }
@@ -44,8 +44,28 @@
   }
 
   #navbar .list-item {
-    margin: .5rem 0;
-    font-size: 30px;
+    margin: .75rem 0;
+    font-size: 40px;
+  }
+
+}
+
+@media handheld and (min-width: 500px) {
+
+  #navbar .title {
+    display: none;
+  }
+
+  #navbar {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navbar .list-item {
+    margin: .75rem 0;
+    font-size: 40px;
   }
 
 }

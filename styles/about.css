@@ -87,7 +87,7 @@ $primary-font: 'Roboto Slab', serif*/
 @media (max-width: 800px) {
 
   #about-div {
-    margin: 2rem 0;
+    margin: 4rem 0;
   }
 
   #about-div .about-description {
@@ -96,6 +96,10 @@ $primary-font: 'Roboto Slab', serif*/
 
   #about-pic {
     display: none;
+  }
+
+  #about-div .about-title-div h1 {
+    font-size: 60px;
   }
 
 }
