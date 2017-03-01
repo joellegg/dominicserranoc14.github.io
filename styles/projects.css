@@ -12,8 +12,8 @@
   box-shadow: 0 8px 8px 2px black;
 }
 
-.project-div hr {
-  margin-top: 5rem;
+.hr {
+  margin-top: 1rem;
   width: 80%;
 }
 
@@ -158,10 +158,6 @@
   .project-div {
     margin: 1rem 0 0 0;
     font-size: 20px;
-  }
-
-  .project-div hr {
-    margin-top: 1rem;
   }
 
 }
