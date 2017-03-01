@@ -107,10 +107,6 @@
 
 @media (max-width: 600px) {
 
-  #project-view {
-    margin-top: 7rem;
-  }
-
   .project-div {
     margin-top: 3rem;
     font-size: 20px;
@@ -144,6 +140,14 @@
   .panel-icon-list p {
     margin: auto;
     width: 80%;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  #project-view {
+    margin-top: 0rem;
   }
 
 }

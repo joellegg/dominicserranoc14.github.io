@@ -64,6 +64,7 @@
     margin: auto;
     flex-direction: column;
     text-align: center;
+    position: relative;
   }
 
   #navbar .list-item {
