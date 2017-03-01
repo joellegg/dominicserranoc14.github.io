@@ -64,6 +64,7 @@ const displayProjects = (list) => {
         <img class="project-pic" src="${each.projectPics[0]}" >
       </div>
 
+      <hr>
     </div>
     `;
   });
