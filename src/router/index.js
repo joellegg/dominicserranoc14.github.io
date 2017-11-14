@@ -12,6 +12,7 @@ export default new Router({
           name: 'AboutPage',
           component: AboutPage,
         },
+        
         {
           path: '/portfolio',
           name: 'PortfolioPage',

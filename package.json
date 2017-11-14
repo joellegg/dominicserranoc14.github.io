@@ -12,6 +12,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bulma": "^0.6.1",
     "node-sass": "^4.6.1",
     "sass-loader": "^6.0.6",
     "vue": "^2.5.2",
